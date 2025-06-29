@@ -1,29 +1,32 @@
 #include <iostream>
-#include <locale.h>
+
+using namespace std;
 
 int main(){
 
     int opcao;
 
-    std::cout << "MENU - COMERCIO ELETRONICO \n";
-    std::cout << "1- Cadastrar Produto; \n";
-    std::cout << "2- Cadastrar Vendedor; \n";
-    std::cout << "3- Cadastrar Comprador; \n";
-    std::cout << "4- Cadastrar Venda; \n";
-    std::cout << "5- Emissao de Nota Fiscal; \n";
+do{
+    cout << "MENU - COMERCIO ELETRONICO \n";
+    cout << "1- Cadastrar Produto; \n";
+    cout << "2- Cadastrar Vendedor; \n";
+    cout << "3- Cadastrar Comprador; \n";
+    cout << "4- Cadastrar Venda; \n";
+    cout << "5- Emissao de Nota Fiscal; \n";
+    cout << "0 - Sair \n";
 
-    std::cout << "\n \n";
+    cout << "\n \n";
 
-    
-    std::cout << "Digite a opcao correspondente a sua escolha: ";
-    std::cin >> opcao;
+    cout << "Digite a sua escolha: ";
+    cin >> opcao;
 
     switch (opcao){
         case 1:
         //função de cadastro de produto
         break;
-        case 2: 
-        //função de cadastro de vendedor
+        case 2:
+        //função de cadastro de vendedor (função que vai abrir um menu para os vendedores);
+        //menu_vendedores(); //função para o menu de cadastro dos vendedores.
         break;
         case 3:
         //função de cadastro de comprador
@@ -34,20 +37,13 @@ int main(){
         case 5:
         //função de emissão de nota fiscal
         break;
+        case 0:
+        cout << "Fim de execucao!";
+        return 0;
+        break;
         default:
-        do{
-            std::cout << "\n";
-            std::cout << "Opcao invalida! Repita. \n";
-            std::cout << "\nDigite a opcao correspondente a sua escolha:  ";
-            std::cin >> opcao;
-         }while (opcao < 1 || opcao > 5);
-    }
-    
-
-
-    
-
-
+            cout << "Opcao invalida! \n";
+    };        }while(opcao != 0);
 
     return 0;
 }

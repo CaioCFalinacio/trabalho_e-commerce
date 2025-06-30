@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1751314846 source:c:\users\pc\desktop\arquivos facul daniel\codeblocks prjs daniel\cadastrarvendadanielbony\main.cpp
+	<iostream>
+	<vector>
+	<string>
+

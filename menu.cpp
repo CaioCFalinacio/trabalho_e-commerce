@@ -23,6 +23,7 @@ do{
     switch (opcao){
         case 1:
         //função de cadastro de produto
+        //cadastro_produtos();
         break;
         case 2:
         //função de cadastro de vendedor (função que vai abrir um menu para os vendedores);

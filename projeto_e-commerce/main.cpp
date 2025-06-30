@@ -1,5 +1,6 @@
 #include <iostream>
 #include <stdio.h>
+#include <windows.h>
 #define SALARIO_MINIMO 1518
 
 using namespace std;
@@ -220,6 +221,7 @@ void menu_vendedores()
     int total_vendedores = 0;
     do
     {
+        system("cls");
         cout << "O que voce deseja fazer?" << endl;
         cout << "1. Cadastrar vendedor" << endl;
         cout << "2. Listar todos os vendedores" << endl;
@@ -235,21 +237,27 @@ void menu_vendedores()
         {
         case 1: // Cadastro de novo vendedor
             cadastrar_vendedor(vendedores, total_vendedores);
+            Sleep(2000);
             break;
         case 2: // Listar todos os vendedores
             listar_vendedores(vendedores, total_vendedores);
+            Sleep(2000);
             break;
         case 3: // Consultar vendedor por ID
             consultar_por_id(vendedores, total_vendedores);
+            Sleep(2000);
             break;
         case 4: // Registrar venda para um vendedor
             registrar_venda(vendedores, total_vendedores);
+            Sleep(2000);
             break;
         case 5: // Editar informações de um vendedor
             editar_informacoes(vendedores, total_vendedores);
+            Sleep(2000);
             break;
         case 6: // Excluir vendedor do sistema
             excluir_vendedor(vendedores, total_vendedores);
+            Sleep(2000);
             break;
         case 0: // Sair do programa
             cout << "Encerrando o programa." << endl;

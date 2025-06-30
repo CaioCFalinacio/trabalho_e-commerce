@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1751231834 source:c:\users\caio\documents\github\trabalho_e-commerce\projeto_e-commerce\main.cpp
+	<iostream>
+	<stdio.h>
+	<windows.h>
+

@@ -261,7 +261,7 @@ void menu_vendedores()
             excluir_vendedor(vendedores, total_vendedores);
             Sleep(2000);
             break;
-        case 0: // Sair do programa
+        case 0: // Sair do menu de vendedores
             cout << "Saindo de cadastrar vendedores." << endl;
             break;
         default:

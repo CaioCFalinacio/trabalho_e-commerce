@@ -241,7 +241,9 @@ void menu_vendedores()
             break;
         case 2: // Listar todos os vendedores
             listar_vendedores(vendedores, total_vendedores);
-            Sleep(2000);
+            if(total_vendedores == 0)
+                cout << "Nenhum vendedor cadastrado." << endl;
+            Sleep(5000);
             break;
         case 3: // Consultar vendedor por ID
             consultar_por_id(vendedores, total_vendedores);
@@ -260,7 +262,7 @@ void menu_vendedores()
             Sleep(2000);
             break;
         case 0: // Sair do programa
-            cout << "Encerrando o programa." << endl;
+            cout << "Saindo de cadastrar vendedores." << endl;
             break;
         default:
             cout << "Opcao invalida!" << endl;

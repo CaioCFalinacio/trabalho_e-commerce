@@ -1,3 +1,14 @@
+/*
+
+DEMONSTRAÇÃO DE COMO O MAIN DO E-COMMERCE SERÁ.
+
+*/
+
+
+
+
+
+
 #include <iostream>
 
 using namespace std;
@@ -31,19 +42,20 @@ int main() {
         // Executa a opção escolhida pelo usuário
         switch (opcao) {
             case 1:
-                //menu_produtos();      // Chama o menu de gerenciamento de produtos
+                menu_produtos();  
                 break;
             case 2:
-                //menu_vendedores();  // Futuro: Chamar menu de gerenciamento de vendedores
+                menu_vendedores();
+                ; 
                 break;
             case 3:
-                //compradores..       // Futuro: Chamar menu de gerenciamento de compradores
+                cadastro_global_compradores.menuCompradores()
                 break;
             case 4:
-                //vendas..            // Futuro: Chamar menu de vendas
+                menu_vendas();
                 break;
             case 5:
-                //nota fiscal...      // Futuro: Chamar menu de emissão de nota fiscal
+                 menu_notaFiscal();
                 break;
             case 0:
                 cout << "Fim de execucao do programa.\n"; // Encerra o programa

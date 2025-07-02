@@ -1023,7 +1023,12 @@ int main() {
             case 5:
                 menu_notaFiscal();
                 break;
-            case 0:
-                cout << "Fim de execucao do programa.\n";
+                cout << "Fim de execucao do programa.\n"; // Encerra o programa
                 break;
-            case
+            default:
+                cout << "Opcao invalida! Tente novamente.\n\n"; // Opção inválida
+        }
+    } while (opcao != 0);
+
+    return 0; // Fim do programa
+}

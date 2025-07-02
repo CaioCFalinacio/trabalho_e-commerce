@@ -3,16 +3,21 @@
 #include <string>
 using namespace std;
 
-// Estrutura do produto no estoque
-struct Produto {
+// Classe Produto
+class Produto {
+public:
     int codigo;
     string nome;
     int quantidadeEstoque;
     float precoVenda;
+
+    Produto(int c, string n, int q, float p)
+        : codigo(c), nome(n), quantidadeEstoque(q), precoVenda(p) {}
 };
 
-// Estrutura do produto vendido
-struct ProdutoVendido {
+// Classe ProdutoVendido
+class ProdutoVendido {
+public:
     string nome;
     int codigoProduto;
     int quantidadeVendida;
@@ -20,8 +25,9 @@ struct ProdutoVendido {
     float precoTotal;
 };
 
-// Estrutura da venda
-struct Venda {
+// Classe Venda
+class Venda {
+public:
     int codigoVenda;
     vector<ProdutoVendido> produtos;
     float valorTotal;
@@ -125,11 +131,11 @@ void excluirVenda() {
     cout << "Venda nao encontrada!\n";
 }
 
-// Funçao so pra testa o codigo
+// Função só para testar o código
 void carregarEstoque() {
-    estoque.push_back({1, "Teclado", 10, 100});
-    estoque.push_back({2, "Mouse", 20, 50});
-    estoque.push_back({3, "Monitor", 5, 500});
+    estoque.push_back(Produto(1, "Teclado", 10, 100));
+    estoque.push_back(Produto(2, "Mouse", 20, 50));
+    estoque.push_back(Produto(3, "Monitor", 5, 500));
 }
 
 int main() {

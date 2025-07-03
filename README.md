@@ -8,6 +8,8 @@
 
 - PDF DO TRABALHO:
    O comércio eletrônico (e-commerce) possibilita a realização de transações comerciais através da internet, eliminando barreiras geográfIcas e permitindo que empresas alcancem mais consumidores. Isso se traduz em maior visibilidade do negócio e maior alcance de clientes. O e-commerce também facilita a compra de produtos e serviços, com maior comodidade e flexibilidade de horário para os consumidores, além de permitir pesquisas comparativas. Para resolver esses problemas, uma loja contratou uma equipe de desenvolvedores de software (estudantes) para desenvolver um sistema de comércio eletrônico.
+
+  Link para o vídeo de teste do código no YouTube: https://youtu.be/iPblJ3QpgwM;
 ## Membros do Grupo:
 
 - Caio César Falinacio dos Santos;
